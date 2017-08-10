@@ -1,0 +1,29 @@
+game = player
+	game.inventory
+	game.location
+
+	game.go(direction)
+	game.take(item)
+	game.drop(item)
+	game.look()
+
+locations maintain their state
+	location.name
+	location.inventory
+
+	location.release(item)
+	location.gain(item)
+	location.describe()
+
+objects also have state
+	object.name
+	object.hidden?
+
+	object.describe()
+
+	object.poke() = object.be_acted_on(None)
+
+	object.act_on(object) eg. key.apply_to(lock)
+	object.be_acted_on(object) lock.be_act_on(key)
+
+doors can be locked -- conditions?
